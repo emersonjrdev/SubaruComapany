@@ -7,7 +7,6 @@ public class Carros {
 	private String nome;
 	private String marca;
 	private String modelo;
-	private int ano;
 	
 	public int getId() {
 		return id;
@@ -33,11 +32,6 @@ public class Carros {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public int getAno() {
-		return ano;
-	}
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
+	
 	
 }
