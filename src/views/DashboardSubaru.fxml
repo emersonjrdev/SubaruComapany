@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="922.0" style="-fx-border-color: #000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="922.0" style="-fx-border-color: #000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubaruController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2a2a2a;">
          <children>
@@ -59,36 +59,36 @@
                                     <Font name="Monospaced Bold" size="15.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="25.0" layoutY="87.0" prefHeight="25.0" prefWidth="271.0" promptText="Subaru STI" style="-fx-border-color: #000;">
+                              <TextField fx:id="alugar" layoutX="25.0" layoutY="87.0" prefHeight="25.0" prefWidth="271.0" promptText="Subaru STI" style="-fx-border-color: #000;">
                                  <font>
                                     <Font name="Monospaced Bold Italic" size="13.0" />
                                  </font></TextField>
-                              <TextField layoutX="25.0" layoutY="185.0" prefHeight="25.0" prefWidth="271.0" promptText="Subaru WRX" style="-fx-border-color: #000;">
+                              <TextField fx:id="comprar" layoutX="25.0" layoutY="185.0" prefHeight="25.0" prefWidth="271.0" promptText="Subaru WRX" style="-fx-border-color: #000;">
                                  <font>
                                     <Font name="Monospaced Bold Italic" size="13.0" />
                                  </font></TextField>
-                              <TextField layoutX="25.0" layoutY="277.0" prefHeight="25.0" prefWidth="271.0" promptText="R$ 250.000,00" style="-fx-border-color: #000;">
+                              <TextField fx:id="valor" layoutX="25.0" layoutY="277.0" prefHeight="25.0" prefWidth="271.0" promptText="R$ 250.000,00" style="-fx-border-color: #000;">
                                  <font>
                                     <Font name="Monospaced Bold Italic" size="13.0" />
                                  </font></TextField>
-                              <Button layoutX="25.0" layoutY="366.0" mnemonicParsing="false" style="-fx-border-color: #000;" text="Adicionar">
+                              <Button layoutX="25.0" layoutY="366.0" mnemonicParsing="false" onAction="#adicionar" style="-fx-border-color: #000;" text="Adicionar">
                                  <font>
                                     <Font name="Monospaced Bold Italic" size="12.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="244.0" layoutY="366.0" mnemonicParsing="false" style="-fx-border-color: #000;" text="Limpar">
+                              <Button layoutX="244.0" layoutY="366.0" mnemonicParsing="false" onAction="#limpar" style="-fx-border-color: #000;" text="Limpar">
                                  <font>
                                     <Font name="Monospaced Bold Italic" size="12.0" />
                                  </font>
                               </Button>
                            </children>
                         </AnchorPane>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                        <AnchorPane prefHeight="6.0" prefWidth="5.0" />
                         <TableView layoutX="363.0" layoutY="18.0" prefHeight="417.0" prefWidth="325.0" style="-fx-background-color: #c0c0c0; -fx-border-color: #000;">
     <columns>
-        <TableColumn prefWidth="102.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Alugar carro" />
-        <TableColumn prefWidth="119.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Comprar carro" />
-        <TableColumn prefWidth="103.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Valores" />
+        <TableColumn fx:id="alugarCarro" prefWidth="102.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Alugar carro" />
+        <TableColumn fx:id="comprarCarro" prefWidth="119.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Comprar carro" />
+        <TableColumn fx:id="valorCarros" prefWidth="103.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Valores" />
     </columns>
 </TableView>
 

@@ -28,7 +28,7 @@ public class SubaruRepository {
 					Carros carros = new Carros();
 					carros.setId(Integer.parseInt(data[0]));
 					carros.setNome(data[1]);
-					carros.setMarca(data[2]);
+					carros.setValor(data[2]);
 					carros.setModelo(data[3]);
 					Subaru.add(carros);
 				}
@@ -88,7 +88,7 @@ public class SubaruRepository {
 		try (PrintWriter writer = new PrintWriter(new FileOutputStream(database, false))){
 			for(Carros carros : Subaru) {
 				// Formatando a linha do dado
-				String data = carros.getId() + ";" + carros.getNome() + ";" + carros.getMarca() + ";" + carros.getModelo();
+				String data = carros.getId() + ";" + carros.getNome() + ";" + carros.getModelo() + ";" + carros.getValor() ;
 				writer.println(data);
 			}
 		} catch (FileNotFoundException e) {

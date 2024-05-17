@@ -26,7 +26,7 @@ public class LoginController {
 		System.out.println("Tentativa de login...");
 		if(email.getText().equals("admin@gmail.com")
 				&& senha.getText().equals("admin")) {
-			
+			System.out.println("Login realizado com sucesso");
 			try {
 				FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/DashboardSubaru.fxml"));
 				

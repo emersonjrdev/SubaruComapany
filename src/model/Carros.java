@@ -5,7 +5,7 @@ public class Carros {
 	private int id;
 	
 	private String nome;
-	private String marca;
+	private String valor;
 	private String modelo;
 	
 	public int getId() {
@@ -20,11 +20,11 @@ public class Carros {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getMarca() {
-		return marca;
+	public String getValor() {
+		return valor;
 	}
-	public void setMarca(String marca) {
-		this.marca = marca;
+	public void setValor(String valor) {
+		this.valor = valor;
 	}
 	public String getModelo() {
 		return modelo;
