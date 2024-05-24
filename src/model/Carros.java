@@ -5,8 +5,8 @@ public class Carros {
 	private int id;
 	
 	private String nome;
-	private String valor;
 	private String modelo;
+	private String valor;
 	
 	public int getId() {
 		return id;

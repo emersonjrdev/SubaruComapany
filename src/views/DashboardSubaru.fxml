@@ -84,7 +84,7 @@
                            </children>
                         </AnchorPane>
                         <AnchorPane prefHeight="6.0" prefWidth="5.0" />
-                        <TableView layoutX="363.0" layoutY="18.0" prefHeight="417.0" prefWidth="325.0" style="-fx-background-color: #c0c0c0; -fx-border-color: #000;">
+                        <TableView fx:id="carview" layoutX="363.0" layoutY="18.0" prefHeight="417.0" prefWidth="325.0" style="-fx-background-color: #c0c0c0; -fx-border-color: #000;">
     <columns>
         <TableColumn fx:id="alugarCarro" prefWidth="102.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Alugar carro" />
         <TableColumn fx:id="comprarCarro" prefWidth="119.0" style="-fx-background-color: #a9a9a9; -fx-border-color: #000;" text="Comprar carro" />

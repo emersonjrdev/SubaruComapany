@@ -28,8 +28,8 @@ public class SubaruRepository {
 					Carros carros = new Carros();
 					carros.setId(Integer.parseInt(data[0]));
 					carros.setNome(data[1]);
-					carros.setValor(data[2]);
-					carros.setModelo(data[3]);
+					carros.setModelo(data[2]);
+					carros.setValor(data[3]);
 					Subaru.add(carros);
 				}
 			}
@@ -108,6 +108,11 @@ public class SubaruRepository {
 			}
 		}
 		return maxId + 1;
+	}
+
+	public Carros[] getListaDeCarros() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
